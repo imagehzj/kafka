@@ -1,4 +1,4 @@
-FROM ttbb/base:jdk11
+FROM ttbb/base:jdk17
 
 LABEL maintainer="shoothzj@gmail.com"
 
@@ -6,7 +6,7 @@ WORKDIR /opt/sh
 
 ENV KAFKA_HOME /opt/sh/kafka
 
-ARG version=2.8.0
+ARG version=3.0.0
 
 RUN wget https://downloads.apache.org/kafka/$version/kafka_2.13-$version.tgz && \
 mkdir /opt/sh/kafka && \
