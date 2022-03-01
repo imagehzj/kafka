@@ -6,7 +6,7 @@ WORKDIR /opt/sh
 
 ENV KAFKA_HOME /opt/sh/kafka
 
-ARG version=3.0.0
+ARG version=3.1.0
 
 RUN wget https://downloads.apache.org/kafka/$version/kafka_2.13-$version.tgz && \
 mkdir /opt/sh/kafka && \
